@@ -9,11 +9,14 @@
 //     }
 
 function criarContador() {
+
           let para = document.createElement('p');
+        if(i<=10){
           para.textContent = i++;
-          document.body.appendChild(para);
+          document.body.appendChild(para);}
     }
         var botoes = document.querySelectorAll('button');
-        for(var i = 0; i < 10; i++) {
+
+        while(i < 10) {
           botoes[i].addEventListener('click', criarParagrafo);
-    }
+        }
